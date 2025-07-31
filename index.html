@@ -3,43 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML basics</title>
-    <meta name="description" content="A beginner-friendly HTML5 web page demonstrating semantic structure, accessibility best practices, and SEO fundamentals.">
+    <title>Registration Portal</title>
+    <meta name="description" content="Register for our service. Fill out the form to join.">
 </head>
 <body>
     <header>
-        <h1>learning how to code a website skeleton</h1>
-        <nav aria-label="Main navigation">
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>Welcome to the Registration Portal</h1>
     </header>
-    <main id="main-content">
-        <section id="about">
-            <h2>About This Page</h2>
-            <p>This page demonstrates the skeleton of a website.</p>
+    <main>
+        <section>
+            <h2>Register Below</h2>
+            <p>Please fill out the form to register for our service.</p>
+            <form>
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name"><br><br>
+
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email"><br><br>
+
+                <label for="phone">Phone Number: </label>
+                <input type="tel" id="phone" name="phone"><br><br>
+
+                <button type="submit">Register</button>
+            </form>
         </section>
-        <section id="features">
-            <h2>Key Features</h2>
-            <article>
-                <h3>Semantic Structure</h3>
-                <p>Uses HTML5 elements like <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>, and <code>&lt;footer&gt;</code> for clear document hierarchy.</p>
-            </article>
-            <article>
-                <h3>Accessibility</h3>
-                <p>Includes proper landmarks, heading order, and ARIA attributes to support screen readers and keyboard navigation.</p>
-            </article>
-            <article>
-                <h3>SEOM Basics</h3>
-                <p>Features descriptive titles, meta descriptions, and logical content structure for better search engine discoverability.</p>
-            </article>
+        <section>
+            <h2>Sample User Information</h2>
+            <table border="1" cellpadding="5" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone Number</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Jane Doe</td>
+                        <td>jane@example.com</td>
+                        <td>+254700000000</td>
+                    </tr>
+                    <tr>
+                        <td>John Smith</td>
+                        <td>john@example.com</td>
+                        <td>+254700000000</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>For more information, please email <a href="mailto:johnjeavas@gmail.com">info@example.com</a>.</p>
+        <section>
+            <h2>Sample Image</h2>
+            <img src="/picture.jpg" alt="Sample Image">
+        </section>
+        <section>
+            <a href="https://www.google.com" target="_blank" rel="noopener">Visit Google</a>
         </section>
     </main>
     <footer>
